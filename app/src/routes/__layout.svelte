@@ -4,6 +4,9 @@
 	console.log(base);
 	console.log(assets);
 	import Sidebar from '$lib/components/Sidebar.svelte';
+	import { walletStore, initialize } from '$lib/stores/wallet/walletStore';
+
+	const wallet = initialize().then();
 </script>
 
 <div>
